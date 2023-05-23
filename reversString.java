@@ -1,24 +1,20 @@
-package javaInterviewProgram;
-
+package edu.jspider.String;
+import java.util.Scanner;
 public class reversString 
 {
-		public static void main (String[] args) {
-		       
-	                String str= "vishalrai";
-	        		String rev="";
-	                
-	       
-	      System.out.print("Original word: ");
-	      System.out.println("vishalrai"); //Example word
-	       
-	      for (int i=0; i<str.length(); i++)
-	      {
-	      char  ch= str.charAt(i); //extracts each character
-	        rev= ch+rev; //adds each character in front of the existing string
-	      }
-	      System.out.println("Reversed word: "+ rev);
-	    }
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		 String revers="";
+		System.out.println("Input the name");
+		for(int i=str.length()-1; i>=0; i--)
+		{
+		revers=revers+str.charAt(i);
+			
+		}
+		System.out.println(revers);
 		
 	}
 
-
+}
